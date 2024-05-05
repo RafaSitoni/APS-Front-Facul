@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required placeholder="Digite o nome do aluno">
+      <label for="primeira">Primeira nota:</label>
+      <input type="number" step="0.1" min="0" max="100" id="primeira" name="primeira" required placeholder="0-100">
+      <label for="segunda">Segunda nota:</label>
+      <input type="number" step="0.1" min="0" max="100" id="segunda" name="segunda" required placeholder="0-100">
+      <label for="terceira">Terceira nota:</label>
+      <input type="number" step="0.1" min="0" max="100" id="terceira" name="terceira" required placeholder="0-100">
+      <button type="button" id="somar" class="button">Somar notas</button>
+      <div id="soma"></div>
+      <button type="button" id="calcularMedia" class="button">Calcular média</button>
+      <div id="media"></div>
+
+      <div id="resultado" class="hidden"></div>
+      <button type="button" id="limpar" class="button">Limpar valores</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
